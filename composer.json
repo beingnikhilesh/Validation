@@ -1,0 +1,22 @@
+{
+    "name": "beingnikhilesh/validation",
+    "description": "An Awesome Validation Engine for PHP",
+    "keywords": [
+        "php",
+        "sms",
+        "codeigniter",
+        "validation"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "beingnikhilesh\\Validation\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "respect/validation": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
