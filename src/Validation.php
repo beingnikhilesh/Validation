@@ -10,12 +10,13 @@ class Validation
     /** Actionable Objects */
     protected $availableActionables = [
         'String'        => Actionables\Strings::class,
+        'Banking'       => Actionables\Banking::class,
         'Numbers'       => Actionables\Numbers::class,
         'Networks'      => Actionables\Networks::class,
         'Contacts'      => Actionables\Contacts::class,
         'Date'          => Actionables\Date::class,
         'Codes'         => Actionables\Codes::class,
-        'Type'          => Actionables\Type::class
+        'Type'          => Actionables\Type::class,
     ];
 
     /** 
