@@ -15,6 +15,7 @@
     },
     "require": {
         "php": ">=7.0.0",
+        "beingnikhilesh/error": "^0.0.1",
         "respect/validation": "2.4"
     },
     "minimum-stability": "dev",
