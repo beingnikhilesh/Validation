@@ -23,26 +23,22 @@ composer require beingnikhilesh/validation
 
 ## Usage
 
-### Basic String Validation
-
 ```php
 
+# Usage Outline
 Validation::Category()->function('value', 'name to display', [Validator Enums], [Additional Parameters])
 
 # Validate a simple string
 Validation::String()->validateString('Dan Swarovski', 'First Name');
-
 # Validate with Muted Errors
 Validation::String(Validator::muteErrors)->validateReferenceNo('xyz-1234-@', 'Reference No', Validator::AllowNull);
-
 # Validate reference numbers
 Validation::String()->validateReferenceNo('xyz-1234-@', 'Reference No', Validator::AllowNull);
-
 # Validate query strings
-Validation::String()->isQueryString('x=1&xyz=12&yuo=me&me=you&rs=&XY=', 'Query String');
-
+Validation::String()->isQueryString('x=1&xyz=12&yuo=me&me=you&rs=&XY=', 'Query String', [Validator::AllowNull]);
 # Validate addresses (with UTF16 support)
 Validation::String()->validateAddress('Sr. No. 90, AXGPM875465465*&^% Facebook Addressॐ', 'Addresses', Validator::UTF16);
+
 ```
 
 ## Features
